@@ -1,0 +1,31 @@
+-Edit command : ----------------------------------
+
+Il faut entrer la commande d'acquisiton sans les caractères \n \r avec ou sans espace.
+Le programme prend en compte ces cas par défaut.
+
+-Connexion au capteur : ----------------------------------
+
+Vous devez indiquer le port virtuel auquel est connecté le capteur, son baudrate et son timeout puis appuyez sur le bouton "Valider".
+Un message devrait apparaître au bas de la fenêtre : "connecté au port COMX".
+
+-Changement de la durée entre 2 mesures: ----------------------------------
+
+Cette durée est par défaut de 5s, vous pouvez la changer même pendant une acquisition.
+
+-Activation de l'alarme: ----------------------------------
+
+Il faut entrer la valeur de la température seuil en °C, votre adresse mail ainsi que le mot de passe associé à l'envoi de mail par Python (ce dernier est différent du mot de passe de votre boîte mail).
+L'alarme est activée en cochant la Checkbox, un message de confirmation devrait apparaître au bas de la fenêtre : "Alarme activée".
+
+-Get password : ----------------------------------
+
+Pour obtenir le bon mot de passe pour activer l'alarme (envoi de mail).
+Consultez https://www.youtube.com/watch?v=g_j6ILT-X0k
+
+Enregistrement des données : --------------------------------------------------------------------
+
+Une fois l'acquisition terminée, vous pouvez enregistrer la figure telle qu'elle en .png ou .jpg.
+Vous pouvez également enregistrer les données de l'acquition en :
+
+.txt : vous aurez alors 1 colonne contenant les températures enregistrées en °C.
+.csv : vous aurez alors 3 colonnes : le numéro de la mesure, la date de la mesure en 'YY-MM-DD h:mn:s' et la température mesurée en °C

@@ -1,0 +1,31 @@
+étapes à suivre :
+
+Connexion : --------------------------------------------------------------------
+
+-Si l'appareil est connecté en série:
+  Il faut entrer le baudrate et le timeout (il est généralement pris à 1s), puis sélectionner l'oscilloscope dans la ComboBox.
+- Si l'appareil est connecté avec Pyvisa:
+  Il faut directement sélectionner l'oscilloscope dans la ComboBox.
+
+Une fois l'oscilloscope connecté (un message est affiché au bas de la fenêtre dès lors), on peut régler les paramètres de l'oscillocope avec le bouton "Paramètres de l'oscilloscope".
+
+Utilisation : --------------------------------------------------------------------
+
+Il faut indiquer la longueur d'onde du curseur de l'analyseur de spectre, puis il faut faire apparaître les curseurs de l'oscilloscope.
+Il faut mettre LE CURSEUR 1 DE L'OSCILLOSCOPE SUR LE CURSEUR DE L'ANALYSEUR DE SPECTRES.
+
+SI VOUS UTILISER LA VERSION AVEC LES 2 CURSEURS : Il faut mettre le 2-ème curseur de l'oscilloscope à 0.2 nm du 1er curseur de l'oscilloscope.
+
+Valider les positions des 2 curseurs et la valeur de la longueur d'onde avec le bouton "Valider", puis lancer une acquisition avec la bouton "Lancer l'acquisition".
+
+L'application affichera la date de la mesure, la longueur d'onde du pic en nm et la largeur à mi-hauteur du spectre. 
+La figure affichée est identique à l'écran de l'oscilloscope.
+
+
+Enregistrement : --------------------------------------------------------------------
+
+Une fois l'acquisition terminée, vous pouvez enregistrer la figure telle qu'elle en .png ou .jpg.
+Vous pouvez également enregistrer les données de l'acquition en :
+
+.txt : vous aurez alors 3 colonnes : longueur d'onde - tension du spectre du laser en V (CH1) - tension créneau en V (CH2)
+.csv : vous aurez alors 5 colonnes, les 3 précédentes en plus d'une colonne contenant l'échelle verticale du channel 1 (spectre), et une autre contenant l'échelle verticale du channel 2 (créneau).
