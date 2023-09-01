@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>646</width>
+    <height>626</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>621</width>
+      <height>351</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSplitter" name="splitter_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>8</y>
+      <width>621</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="label_connexion_type">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Connexion avec pyserial :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_bdrate">
+      <property name="text">
+       <string>Baudrate</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_bdrate"/>
+     <widget class="QLabel" name="label_timeout">
+      <property name="text">
+       <string>Timeout</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_timeout"/>
+    </widget>
+    <widget class="QSplitter" name="splitter_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="label_select_oscillo">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Selectionnez l'oscilloscope :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_select_oscillo"/>
+    </widget>
+    <widget class="QPushButton" name="button_params_oscillo">
+     <property name="text">
+      <string>Paramètres de l'oscilloscope</string>
+     </property>
+    </widget>
+    <widget class="QSplitter" name="splitter_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="label_lambda_c">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Veuillez entrer la longuer d'onde associée au curseur de l'analyseur de spectres (nm) :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBox_lambda_c">
+      <property name="minimum">
+       <number>350</number>
+      </property>
+      <property name="maximum">
+       <number>1100</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QSplitter" name="splitter_4">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="label_vcursor">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Veuillez placer le curseur 1 de l'oscilloscope sur le curseur de l'analyseur :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_appear_vcursor">
+      <property name="text">
+       <string>Faire apparaître le curseur</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="checkBox_cursor">
+      <property name="text">
+       <string>Valider</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="button_acquire">
+     <property name="text">
+      <string>Lancer l'acquisition</string>
+     </property>
+    </widget>
+    <widget class="QSplitter" name="splitter_5">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="label_lambda_pic">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Longueur d'onde du pic :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="value_lambda_pic">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_largeur">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Largeur à mi-hauteur :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="label_largeur_mi_hauteur">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QSplitter" name="splitter_6">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="label_date_acquisition">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Date de l'acquisition :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="label_date">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>646</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEnregister_l_acquisition_en">
+    <property name="title">
+     <string>Enregister la figure en</string>
+    </property>
+    <addaction name="action_png_3"/>
+    <addaction name="action_jpg_3"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionGuide_d_utilisation"/>
+   </widget>
+   <widget class="QMenu" name="menuEnregistrer_l_acquisition_en">
+    <property name="title">
+     <string>Enregistrer l'acquisition en</string>
+    </property>
+    <addaction name="action_csv_4"/>
+    <addaction name="action_txt_4"/>
+   </widget>
+   <addaction name="menuEnregistrer_l_acquisition_en"/>
+   <addaction name="menuEnregister_l_acquisition_en"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="action_png">
+   <property name="text">
+    <string>.png</string>
+   </property>
+  </action>
+  <action name="action_jpg">
+   <property name="text">
+    <string>.jpg</string>
+   </property>
+  </action>
+  <action name="action_csv">
+   <property name="text">
+    <string>.csv</string>
+   </property>
+  </action>
+  <action name="action_txt">
+   <property name="text">
+    <string>.txt</string>
+   </property>
+  </action>
+  <action name="action_png_2">
+   <property name="text">
+    <string>.png</string>
+   </property>
+  </action>
+  <action name="action_jpg_2">
+   <property name="text">
+    <string>.jpg</string>
+   </property>
+  </action>
+  <action name="action_csv_2">
+   <property name="text">
+    <string>.csv</string>
+   </property>
+  </action>
+  <action name="action_txt_2">
+   <property name="text">
+    <string>.txt</string>
+   </property>
+  </action>
+  <action name="action_png_3">
+   <property name="text">
+    <string>.png</string>
+   </property>
+  </action>
+  <action name="action_jpg_3">
+   <property name="text">
+    <string>.jpg</string>
+   </property>
+  </action>
+  <action name="action_csv_3">
+   <property name="text">
+    <string>.csv</string>
+   </property>
+  </action>
+  <action name="action_txt_3">
+   <property name="text">
+    <string>.txt</string>
+   </property>
+  </action>
+  <action name="actionGuide_d_utilisation">
+   <property name="text">
+    <string>Guide d'utilisation</string>
+   </property>
+  </action>
+  <action name="action_csv_4">
+   <property name="text">
+    <string>.csv</string>
+   </property>
+  </action>
+  <action name="action_txt_4">
+   <property name="text">
+    <string>.txt</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

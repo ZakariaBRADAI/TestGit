@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Help</class>
+ <widget class="QDialog" name="Help">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>468</width>
+    <height>485</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Guide d'utilisation</string>
+  </property>
+  <widget class="QLabel" name="label_guide">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>431</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;En premier lieu, vous devez éditer la commande qui ordonne à votre appareil de faire&lt;/p&gt;&lt;p&gt;une acquisition en cliquant sur le bouton&lt;span style=&quot; font-style:italic;&quot;&gt; Edit Commands&lt;/span&gt;&lt;/p&gt;&lt;p&gt;(par défaut le programme considère qu'il n'y en a pas).&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Vous devez ensuite établir la connection série avec votre appareil en indiquant baudrate&lt;/p&gt;&lt;p&gt;, timeout et port virtuel.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Vous pouvez changer la durée entre 2 mesures même pendant une acquisition.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Si l'acquisition ne se lance pas, re-appyuez sur le bouton ou relancez l'application&lt;/p&gt;&lt;p&gt;(sans doute que le moment entre la déclaration de la commande et le&lt;/p&gt;&lt;p&gt;début de l'acquisition est trop court). &lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;En activant l'alarme, vous receverez un mail de vous même vous indiquant la date&lt;/p&gt;&lt;p&gt;à laquelle la température seuil a été franchie.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
